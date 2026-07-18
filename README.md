@@ -8,6 +8,7 @@ https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releas
 
 例えば、チャンネルAとチャンネルBをグループとし、チャンネルAで発言した内容をチャンネルBに指定した言語に翻訳して出力します。逆も同様です。
 
+DiscordのBOTトークンは必須ですが、geminiは任意なので必須ではありません。
 
 
 1. 初期導入と起動手順
