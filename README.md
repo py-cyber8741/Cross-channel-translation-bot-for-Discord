@@ -5,7 +5,9 @@ https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releas
 
 
 全133言語に対応したリアルタイム Discord 相互チャンネル翻訳BotおよびGUI管理アプリケーションです。Google翻訳エンジン（deep_translator）による相互翻訳、Google Gemini AI（gemini-2.5-flash）を活用した推敲翻訳機能、スパム検知、トークン暗号化保存機能などを統合しています。
-チャンネルAとチャンネルBをグループとし、チャンネルAで発言した内容をチャンネルBに指定した言語に翻訳して出力します。逆も同様です。
+
+例えば、チャンネルAとチャンネルBをグループとし、チャンネルAで発言した内容をチャンネルBに指定した言語に翻訳して出力します。逆も同様です。
+
 
 
 1. 初期導入と起動手順
