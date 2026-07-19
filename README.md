@@ -1,7 +1,7 @@
 # Cross-channel-translation-bot-for-Discord
 Cross-channel translation bot for Discord
 
-https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/exe/transbot.exe
+https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.0.1/transbot.exe
 
 DiscordのBOTトークンは必須ですが、geminiは任意なので必須ではありません。
 
