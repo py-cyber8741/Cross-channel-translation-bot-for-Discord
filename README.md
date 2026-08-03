@@ -95,3 +95,94 @@ BAN設定: 特定のユーザーIDやサーバーIDを登録することで、Bo
 /botconfig ban,指定したユーザーをBANリストに追加します。,システム管理者
 
 /botconfig unban,指定したユーザーのBANや一時停止を解除します。,システム管理者
+
+
+
+
+Cross-channel translation bot for Discord
+
+https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.1.0/transbot.exe
+
+A Discord BOT token is required, but a Gemini API key is optional and not mandatory.
+User Manual
+This application is a highly functional tool that performs multilingual real-time translation between Discord servers and channels. It comes equipped with a variety of features, including intuitive GUI-based management, DM support, an image viewer, and AI integration.
+
+🤖 TransBot User Manual
+Initial Setup and Bot Startup
+After launching the application, you must first configure the settings to link it with your Discord Bot.
+Open Settings Screen: Click the "⚙️ Settings" button in the upper right corner of the screen.
+Enter Token: In the "Basic Settings" tab, enter the Bot token obtained from the Discord Developer Portal into the "Bot Token:" field.
+Gemini API Key (Optional): Enter this if you plan to use the AI-powered translation and text refinement features.
+Change UI Language: You can switch the application's interface language (e.g., between Japanese and English).
+Save and Start: Click "Save" to return to the main screen, then click the "Start Bot" button to bring the Bot online.
+Basic Operations on the Main Screen
+The main screen consists of three areas: the New Translation Feed, Channel Settings, and System Log. You can freely adjust the size of each area by dragging the borders with your mouse. You can also enlarge or reduce the text size using the "A+" and "A-" buttons in the upper right corner.
+Creating and Managing Translation Groups
+By bundling channels within a server into a "Group," translations will automatically be sent back and forth between those channels.
+Fetch Channels: Clicking the "📡 Fetch Channels" button in the center of the screen will display a list (sidebar) on the right showing the servers and channels the Bot has joined.
+Input Information: Double-clicking a channel in the sidebar will automatically input its GID (Server ID) and ChID (Channel ID).
+Specify Language: Double-click the target translation language from the "🌐 Language List" to input it into the "Lan" field.
+Group Name: Enter a desired group name (e.g., Group-1) into the "Grp" field.
+Add/Update: Click the "Add/Update" button to register it in the hierarchical tree.
+Other Main Screen Features
+Webhook Feature: When checked, the Bot will impersonate the user's icon and name when sending translations (making it much easier to read on Discord).
+National Flag Reaction Translation: When checked, if a user reacts to a message on Discord with a national flag emoji (e.g., 🇺🇸), the Bot will translate the message into that language and reply.
+New Translation Feed: Translations occurring across all active servers will flow here in real-time. Double-clicking (or right-clicking) an item in the list will open the "Log Viewer" for that specific channel.
+Various Tool Windows
+These are powerful management tools accessible from the hierarchical tree channels or the new translation feed. All windows support size adjustment by dragging the borders.
+
+📜 Log Viewer
+View and manage past messages of a target channel.
+Display Translation: Use the "🌐 Translate" button to batch-translate past logs into a specified language and display them.
+Image Viewer Feature: Clicking an image (🔍 icon) in the log opens it in its original size.
+Mouse Wheel: Zoom in/out of the image.
+Left Click + Drag: Grab and freely move the enlarged image (pan).
+Right Click: Save the image.
+Quick Reply: You can send messages from the bottom of the screen while looking at the logs.
+Delete Recent Bot Messages: Delete a mistakenly sent Bot message with a single click.
+
+💬 BOT Speech Window
+Opens when you right-click a channel on the tree and select "💬 Speak in this channel".
+Transmission Mode: Choose from "Send as is," "Translate and send," or "AI translate/refine."
+AI Translation: Utilizes the Gemini API to refine and translate your text into more natural phrasing in the specified language before sending.
+Real-time Log: The latest conversation activity for that channel streams in real-time at the top of the window.
+
+✉️ DM (Direct Message) Management
+Open this from the "✉️ DM" button in the upper right of the main screen. You can check and reply to DMs sent directly to the Bot.
+Sync History: Clicking "🔄 Sync past DMs from Discord" restores the history of users the Bot has interacted with previously.
+User Details: Right-click the user list on the left > "ℹ️ Show User Info" to display and easily copy detailed information as text, such as the user's ID and the number of saved DMs.
+Translated Reply: You can translate your replies to DMs into a specified language before sending.
+
+🌐 Automatic Multilingual Channel Generation (Auto Clone)
+Right-click a channel on the tree displayed by "📡 Fetch Channels" and select "🌐 Auto-generate multilingual channels". This duplicates the base channel and instantly creates dedicated channels for multiple selected languages (e.g., English, Korean, Chinese). The created channels are automatically registered into a translation group and interconnected.
+Anti-Spam & BAN Settings (System Management)
+You can configure countermeasures against trolls and disruptive behavior from the settings screen.
+Spam Detection: Set the "Spam Detection Timeframe (minutes)" and "Detection Count". Users who consecutively post beyond this limit will automatically be put into "Suspend" status, and their translations will stop.
+BAN Settings: By registering specific user IDs or server IDs, the Bot will completely ignore any messages from those targets.
+Discord Slash Commands
+These are commands that server administrators and users can execute directly from the Discord chat input.
+
+
+Command,Description,Permission
+
+/chset,Groups a specified number of channels in the current server and sets up mutual translation.,Administrator
+
+/chdel,Unregisters and deletes a channel from a translation group.,Administrator
+
+/setup,Displays a control panel where settings (ON/OFF) and languages can be changed instantly via buttons.,Administrator
+
+/chadd,Adds a new channel to an existing translation group.,Administrator
+
+/chmode,Toggles Webhook mode and national flag reaction translation ON/OFF.,Administrator
+
+/ai,Translates and refines the inputted text using AI (Gemini) before sending.,Everyone
+
+/botconfig status,"Checks the current Bot status, such as spam detection criteria and the number of banned users.",System Admin
+
+/botconfig spam,Sets the timeframe and count threshold for spam (continuous posting) detection.,System Admin
+
+/botconfig notify,Toggles the new translation feed notification ON/OFF and sets its language.,System Admin
+
+/botconfig ban,Adds a specified user to the BAN list.,System Admin
+
+/botconfig unban,Lifts a BAN or suspension for a specified user.,System Admin
