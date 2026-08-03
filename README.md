@@ -1,7 +1,7 @@
 # Cross-channel-translation-bot-for-Discord
 Cross-channel translation bot for Discord
 
-https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.1.0/transbot.exe
+https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.1.1/transbot.exe
 
 DiscordのBOTトークンは必須ですが、geminiは任意なので必須ではありません。
 
@@ -149,7 +149,7 @@ BAN設定: 特定のユーザーIDやサーバーIDを登録することで、Bo
 
 Cross-channel translation bot for Discord
 
-https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.1.0/transbot.exe
+https://github.com/py-cyber8741/Cross-channel-translation-bot-for-Discord/releases/download/1.1.1/transbot.exe
 
 A Discord BOT token is required, but a Gemini API key is optional and not mandatory.
 
